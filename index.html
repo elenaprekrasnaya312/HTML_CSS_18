@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="left-bar">
+                <div class="div-a">
+                    <a href="#"><img src="img/icon-1.svg" alt="icon-1"></a>
+                </div>
+
+                <div class="search-container">
+                    <img src="img/search-logo.svg" alt="search" id="search-logo">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                </div>
+                
+            </div>
+
+            <div class="right-bar" style="gap: 30px;">
+                <a href="#" class="nav-menu"><img src="img/nav-menu.png" alt="nav-menu" style="margin-top: 5px;"></a>
+                <div class="menu-bar" id="menuBar">
+                    <h1>MENU</h1>
+                    <h2>MAN</h2>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                    </ul>
+                    <h2>WOMAN</h2>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                        </ul>
+
+                    <h2>KIDS</h2>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Bags</a></li>
+                        </ul>
+                    
+
+                </div>
+                
+                
+                
+                <a href="#" class="nav-user"><img src="img/nav-user.png" alt="nav-user"></a>
+
+                <div class="cart-navbar">
+                    <a href="#" class="cart-icon">
+                        <img src="img/nav-cart.png" alt="nav-cart" style="margin-bottom: 19px;">
+                        <span id="cart-quantity">0</span>
+                    </a>
+                </div>
+
+                
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="top">
+        <div class="top-img">
+            <img src="img/top-img1.svg" alt="top-img1">
+        </div>
+
+        <div class="description">
+            <div class="rect"><img src="img/rect.svg" alt="rect"></div>
+            
+            <div class="text">
+                <h1>THE BRAND</h1>
+                <p>OF LUXERIOUS <span class="highlight">FASHION</span></p>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="categories">
+            <div class="smallRect" style="background-image: url('img/woman.svg');">
+                <a href="#">
+                    <p>30% OFF</p>
+                    <h1>FOR WOMEN</h1>
+                </a>
+            </div>
+            <div class="smallRect" style="background-image: url('img/men.svg');">
+                <a href="#">
+                    <p>HOT DEAL</p>
+                    <h1>FOR MEN</h1>
+                </a>
+            </div>
+            <div class="smallRect" style="background-image: url('img/kids.svg');">
+                <a href="#">
+                    <p>NEW ARRIVALS</p>
+                    <h1>FOR KIDS</h1>
+                </a>
+            </div>
+ 
+
+            <div class="largeRect" style="background-image: url('img/accessoires.svg');">
+                <a href="#">
+                    <p>LUXIROUS & TRENDY</p>
+                    <h1>ACCESORIES</h1>
+                </a>
+            </div>
+        </div>
+
+        <h1 class="body-h1">Featured Items</h1>
+        <p class="body-p">Shop for items based on what we featured in this week</p>
+
+
+        <div class="sale-container">
+
+            <div class="sale-cards">
+                <div class="img-container">
+                    <img src="img/sale1.svg" alt="sale1">
+                    <div class="overlay">
+                        
+                        <button onclick="addToCart('product1', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span>Add to Cart</span>
+                        </button> 
+                    </div>
+                    
+                </div>
+
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+            </div>
+
+            <div class="sale-cards">
+                <div class="img-container">
+                    <img src="img/filled_rect.svg" alt="filled_rect" class="background-img">
+                    <img src="img/sale2.svg" alt="forground-img" class="forground-img">
+                    <div class="overlay">
+                        <button onclick="addToCart('product2', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span style="font-family: Lato;">Add to Cart</span>
+                        </button> 
+                    </div>
+
+                    <div id="notification" class="hidden">
+                        Product added to the cart!
+                    </div>
+                </div>
+                
+                
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+            </div>
+            <div class="sale-cards">
+                <div class="img-container">
+                    <img src="img/sale3.svg" alt="sale3">
+                    <div class="overlay">
+                        <button onclick="addToCart('product3', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span>Add to Cart</span>
+                        </button> 
+                    </div>
+                </div>
+
+
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+            </div>
+            <div class="sale-cards">
+                <div class="img-container">
+                    <img src="img/sale4.svg" alt="sale4">
+                    <div class="overlay">
+                        <button onclick="addToCart('product4', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span>Add to Cart</span>
+                        </button> 
+                    </div>   
+                </div>
+
+
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+
+            </div>
+            <div class="sale-cards">
+
+                <div class="img-container">
+                    <img src="img/sale5.svg" alt="sale5">
+                    <div class="overlay">
+                        <button onclick="addToCart('product5', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span>Add to Cart</span>
+                        </button> 
+                    </div>
+                </div>
+ 
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+
+            </div>
+
+            <div class="sale-cards">
+                <div class="img-container">
+                    <img src="img/sale6.svg" alt="sale6">
+                    <div class="overlay">
+                        <button onclick="addToCart('product6', 'ELLERY X M O CAPSULE', 52.00)">
+                            <img src="img/cart-logo.png" alt="cart-logo">
+                            <span>Add to Cart</span>
+                        </button> 
+                    </div>                    
+                </div>
+                
+                <h2>ELLERY X M'O CAPSULE</h2>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h1>$52.00</h1>
+
+
+            </div>
+
+        </div>
+
+        <div class="button-container">
+            <button type="button" class="body-click">
+                    
+                <span>Browse All Products</span>
+                        
+            </button>
+
+        </div>
+       
+        
+       
+    </div>
+            
+
+<footer>
+    <div class="background">
+        <div class="footer-1">
+
+        <div class="rect-footer">
+            <img src="img/forma2.png" alt="forma1" class="forma">
+            <h2>Free Delivery</h2>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+
+        <div class="rect-footer">
+            <img src="img/forma1.png" alt="forma2" class="forma">
+            <h2>Sales & discounts</h2>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+
+        <div class="rect-footer">
+            <img src="img/forma3.png" alt="forma3" class="forma">
+            <h2>Quality assurance</h2>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
+
+    
+        </div>
+    </div>
+
+    <div class="footer-2">
+
+        <div class="footer-container">
+            <div class="rect-footer-2">
+                <img src="img/footer-photo.png" alt="footer-photo" class="footer-photo">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span class="styled-text"> a pulvinar purus condimentum</span>“</p>
+            </div>
+
+            <div class="rect-footer-3">
+                <h2>SUBSCRIBE</h2>
+                <p>FOR OUR NEWLETTER AND PROMOTION</p>
+
+                <div class="subscribe-container">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter Your Email" class="subscribe-input" required>
+                        <button type="submit" class="submit-button">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+
+    <div class="background">
+        <div class="footer-3">
+            <div class="reserved">
+                <p>© 2021  Brand  All Rights Reserved.</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/printerest.png" alt="printerest"></a>
+                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+
+            </div>
+        </div>
+    </div> 
+
+
+</footer>
+
+<script>
+
+    // Cart Bar
+    let cart = [];
+
+
+
+
+    function showNotification() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+
+        setTimeout(() => {
+            hideNotification();
+        }, 2000);
+
+    }
+
+    function hideNotification() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'none'
+    }
+
+
+        function addToCart(productId, productName, productPrice) {
+        const existingProduct = cart.find(item => item.id === productId);
+
+        if (existingProduct) {
+            existingProduct.quantity++;
+        } else {
+            cart.push({
+                id: productId,
+                name: productName,
+                price: productPrice,
+                quantity: 1
+            });
+        }
+
+        updateCartQuantity();
+
+        showNotification();
+    }
+
+    function updateCartQuantity() {
+        const cartQuantityElement = document.getElementById('cart-quantity');
+
+        const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
+        cartQuantityElement.textContent = totalQuantity;
+
+
+    }
+
+
+    // Search Bar
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchLogo = document.getElementById('search-logo');
+        const searchBar = document.getElementById('search-bar');
+
+        searchLogo.addEventListener('click', () => {
+            searchBar.classList.toggle('active');
+            if (searchBar.classList.contains('active')) {
+                searchBar.focus();
+            } else {
+                searchBar.blur();
+            }
+    });
+
+    searchBar.addEventListener('blur', () => {
+        searchBar.classList.remove('active');
+    });
+});
+
+
+
+    // Menu Bar
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBar = document.getElementById('menuBar');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navMenu.addEventListener('click', function () {
+        menuBar.classList.toggle('visible');
+        });
+    })
+
+
+
+
+</script>
+    
+
+</body>
+</html>
+
